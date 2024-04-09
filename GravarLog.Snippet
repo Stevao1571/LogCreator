@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>SelectElement</Title>
+			<Shortcut>dgrav</Shortcut>
+			<Description>Suporte ao SelectElement do selenium</Description>
+			<Author>Stevao Souza</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+				<SnippetType>SurroundsWith</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Code Language="csharp"><![CDATA[
+			
+        private void gravararquivo(Objeto item)
+        {
+
+            using (StreamWriter arquivo = File.AppendText("Historico.txt"))
+            {
+
+                arquivo.WriteLine(DateTime.Now.ToString("dd/MM/yyyy - HH:mm") + " - " + item.Objeto + " - " + item.Objeto);
+
+            }
+        }	
+	]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>
